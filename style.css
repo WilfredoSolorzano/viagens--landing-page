@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #79dcf5;
+    }
+    header {
+      background-color: #258ab9;
+      color: #141313;
+      text-align: center;
+      padding: 10px;
+      }
+    nav {
+      background-color: rgba(158, 152, 152, 0.877);
+      padding: 1px;
+     }
+    .menu{
+        display: inline;
+        margin-left: 16px;
+        font-size: 18px;
+      }
+    nav a {
+      color: #0e0d0d;
+      text-decoration: none;
+      margin-right: 10px;
+      }
+    main {
+      padding: 20px;
+      }
+    section {
+      margin-bottom: 20px;
+      }
+    .banner {
+      position: relative;
+      height: 300px;
+      background-image: url('./imagen/vilarejo.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #0f0f0f;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+    .banner h1 {
+      font-size: 2.5em;
+      }
+    .benvinda {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(158, 152, 152, 0.877);
+      padding: 20px;
+      }
+    .benvinda p {
+      font-size: 1.2em;
+      }
+    .sobre-nos {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      padding: 16px;
+      border: 1px solid aliceblue;
+      }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      }
+    .button:hover {
+      background-color: #0056b3;
+      }
+    .slideshow-container {
+        max-width: 950px;
+        position: relative;
+        margin: auto;
+       }
+      .descrip{
+        padding: 16px;
+        text-align: center;
+        }
+      .mySlides {
+        display: none;
+        }
+      
+      /* Botões de navegação do slideshow */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: #bbb;
+        }
+      
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+       }
+      
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+      
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+         }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+        }
+      .tab {
+        overflow: hidden;
+        border: 1px solid #2edad1;
+        background-color: #b2faee;
+        width: 80%;
+        margin: 0 auto;
+        }
+      .section-heading{
+        padding: 16px;
+        border: 1px solid aliceblue;
+        margin-bottom: 24px;
+        }
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        }
+      
+      .tab button:hover {
+        background-color: #ddd;
+       }
+      
+      .tab button.active {
+        background-color: #ccc;
+        font-weight: bold;
+        }
+      
+    
+      .aba{
+        width: 250px;
+        height: 120px;
+        display: block;
+        margin: 0 auto;
+        }
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid aliceblue;
+        border-top: none;
+        text-align: center;
+        background-color: #cfcfcf;
+       }
+      .tabcontent p {
+        margin-top: 10px; 
+        }
+      
+      .show {
+        display: block;
+        }
+
+      .conteiner-flex{
+        display: flex;
+        justify-content: center;
+        padding-top: 24px;
+        }
+    
+    footer li{
+        list-style: none;
+        margin-left:16px;
+        margin-top: -26px;
+      }
+    footer ul img{
+        height: 22px;
+        display: flex;
+      }
+
+      @media screen and (max-width: 660px) {
+       
+        .menu{
+          font-size: 1em;
+        }
+        .banner h1 {
+            font-size: 1em;
+            margin-bottom: 16px;
+        }
+        .benvinda p {
+            font-size: 1em;
+            margin-bottom: 16px;
+        }
+        .button {
+            font-size: 0.5em;
+        }
+        .sobre-nos {
+            font-size: 1em;
+        }
+        .descrip {
+            font-size: 1.2em;
+        }
+        .section-heading {
+            font-size: 1em;
+        }
+        .tab {
+            margin-bottom: 16px;
+        }
+    }
+  
+  /* Estilos para laptop y escritorio */
+  @media screen and (min-width: 669px) and (max-width: 920px) {
+   
+    .banner h1 {
+      font-size: 1.2em;
+      margin-bottom: 16px;
+  }
+  .benvinda p {
+    font-size: 1em;
+    margin-bottom: 16px;
+  }
+  .button {
+   font-size:1em ;
+  }
+  .sobre-nos {
+  font-size: 1.2em;
+  }
+  .descrip {
+  font-size: 1.5em;
+  }
+  .section-heading {
+  font-size: 1.2em;
+  }
+    .tab {
+        margin-bottom: 16px;
+    }
+}

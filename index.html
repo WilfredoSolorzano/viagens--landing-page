@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagem aaa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vilarejo Europeu</h1>
+      </header>
+      <nav class="menu">
+        <a href="#trip">TripMe</a>
+        <a href="#meet">MeetUs</a>
+        <a href="#advice">Conselhos</a>
+      </nav>
+      <main>
+        <section id="trip" class="banner">
+          <div class="benvinda">
+            <h1>Bem-vindo ao nosso vilarejo europeu!</h1>
+            <p>Explore a beleza pitoresca deste lugar encantador.</p>
+            <a href="#meet" class="button">Descubra mais</a>
+          </div>
+        </section>
+        <section id="meet">
+            <h2 class="sobre-nos">Conheça-nos</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <h2 class="descrip">Nossos principais escritorios na Europa</h2>
+                    <img src="./imagen/europa.jpg" alt="viagem" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <h2 class="descrip">Os melhores destinos do mundo para os melhores preços</h2>
+                    <img src="./imagen/melhores.webp" alt="melhoes" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <h2 class="descrip">Vamos Conhecer Londres, um destino maravilhoso</h2>
+                    <img src="./imagen/londres.jpg" alt="londres" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+        <section id="advice">
+            <h2 class="section-heading">Conselhos para sua viagem</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'planning')">Planejamento antecipado</button>
+                <button class="tablinks" onclick="openTab(event, 'priorities')">Faça uma lista de prioridades</button>
+                <button class="tablinks" onclick="openTab(event, 'priorities1')">Embalagem inteligente</button>
+                <button class="tablinks" onclick="openTab(event, 'priorities2')">Aproveite a culinária local</button>
+                <button class="tablinks" onclick="openTab(event, 'priorities3')">Divirta-se e relaxe</button>
+            </div>
+        
+            <div id="planning" class="tabcontent">
+                <h3>Planejamento antecipado</h3>
+                <img class="aba" src="./imagen/planejamento.jpeg" alt="Planejamento antecipado" >
+                <p>Pesquise sobre o destino para onde está viajando. Saiba quais são as atrações turísticas, os melhores restaurantes, opções de transporte e as condições climáticas esperadas.</p>
+            </div>
+        
+            <div id="priorities" class="tabcontent">
+                <h3>Faça uma lista de prioridades</h3>
+                <img class="aba" src="./imagen/prioridades.webp" alt="Faça uma lista de prioridades">
+                <p>Determine quais são as atividades ou locais que você mais deseja visitar durante a viagem e organize sua agenda de acordo.</p>
+            </div>
+
+            <div id="priorities1" class="tabcontent">
+                <h3>Embalagem inteligente</h3>
+                <img class="aba" src="./imagen/envalagem.jpg" alt="Embalagem inteligente">
+                <p>Determine quais são as atividades ou locais que você mais deseja visitar durante a viagem e organize sua agenda de acordo.</p>
+            </div>
+
+            <div id="priorities2" class="tabcontent">
+                <h3>Aproveite a culinária local</h3>
+                <img class="aba" src="./imagen/comidas-europa.webp" alt="Aproveite a culinária local">
+                <p>Determine quais são as atividades ou locais que você mais deseja visitar durante a viagem e organize sua agenda de acordo.</p>
+            </div>
+
+            <div id="priorities3" class="tabcontent">
+                <h3>Divirta-se e relaxe</h3>
+                <img class="aba" src="./imagen/Divirta-se e relaxe.webp" alt="">
+                <p>Determine quais são as atividades ou locais que você mais deseja visitar durante a viagem e organize sua agenda de acordo.</p>
+            </div>
+        </section>
+      </main>
+      <footer>
+        <div class="conteiner-flex">
+        <p>2024 &copy; Projecto  para DEVstar-todos os direitos reservados</p>
+        <ul class="conteiner-flex">
+            <li>
+                <a href="#">
+                    <img src="./imagen/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagen/instagran.jpeg" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagen/youtube.png" alt="youtube">
+                </a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+      <script src="main.js"></script>
+</body>
+</html>
